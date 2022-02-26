@@ -15,11 +15,9 @@ def th(target):
 def u():
     
     while settings.tester != None:
-        try:
-            bot.send_message(settings.tester, str(datetime.datetime.now())[:16], disable_notification=True)
+        bot.send_message(settings.tester, str(datetime.datetime.now())[:16], disable_notification=True)
         
-        except:
-            print('auto')
+        
         time.sleep(settings.minutes*60)
 
 
